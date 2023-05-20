@@ -1,1 +1,1 @@
-# redux-toolkit-demo
+# Redux Toolkit w/ React + Typescript
