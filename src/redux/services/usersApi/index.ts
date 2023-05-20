@@ -9,7 +9,7 @@ type User = {
 
 const BASE_URL = 'https://jsonplaceholder.typicode.com';
 
-export const usersApi = createApi({
+const usersApi = createApi({
     reducerPath: 'usersApi',
     baseQuery: fetchBaseQuery({ baseUrl: BASE_URL }),
 
@@ -38,3 +38,5 @@ export const {
     useGetUserByIdQuery,
     useCreateUserMutation
 } = usersApi;
+
+export default usersApi;

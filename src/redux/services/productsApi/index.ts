@@ -7,7 +7,7 @@ type Product = {
     price: number;
 };
 
-export const productsApi = createApi({
+const productsApi = createApi({
     reducerPath: 'productsApi',
     baseQuery: fetchBaseQuery({ baseUrl: '/api' }),
 
@@ -36,3 +36,5 @@ export const {
     useGetProductByIdQuery,
     useCreateProductMutation
 } = productsApi;
+
+export default productsApi;

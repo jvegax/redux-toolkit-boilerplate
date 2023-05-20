@@ -1,5 +1,5 @@
 import { useAppSelector, useAppDispatch } from "../redux/hooks"
-import { increment, decrement } from "../redux/slices/counterSlice"
+import { increment, decrement } from "../redux/slices/counter"
 
 
 const Counter = () => {

@@ -1,9 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/dist/query';
 
-import counterReducer from '../slices/counterSlice';
-import { usersApi } from '../services/usersApi';
-import { productsApi } from '../services/productsApi';
+import counterReducer from '../slices/counter';
+import { usersApi, productsApi } from '../services';
 
 const store = configureStore({
     reducer: {
@@ -18,7 +17,8 @@ const store = configureStore({
 
 setupListeners(store.dispatch);
 
-export default store;
 
 export type RootState = ReturnType<typeof store.getState>
 export type AppDispatch = typeof store.dispatch 
+
+export default store;
