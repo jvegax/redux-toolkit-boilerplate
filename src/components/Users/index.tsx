@@ -1,4 +1,4 @@
-import { useGetUsersQuery } from "../redux/services/usersApi"
+import { useGetUsersQuery } from "../../redux/services/usersApi"
 
 const Users = () => {
     const { data, error, isLoading, isFetching } = useGetUsersQuery(null)
